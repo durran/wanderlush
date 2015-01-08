@@ -26,7 +26,7 @@ body {
   width: 100%;
   position: fixed;
   border-bottom: 3px solid #FFFFFF;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 10;
 }
 
@@ -34,6 +34,14 @@ body {
   font-size: 20px;
   font-weight: 600;
   padding-left: 20px;
+}
+
+.curb {
+  border-bottom: 10px solid #000000;
+}
+
+.hat {
+  border-top: 2px solid #FFB6C1;
 }
 
 .bar-list {
@@ -44,10 +52,13 @@ body {
 .bar-list .bar-container {
   width: 100%;
   height: 100%;
-  border-bottom: 3px solid #FFFFFF;
 }
 
 .bar-list .bar-container .bar-name {
+  width: 25%;
+  height: 0;
+  padding-bottom: 25%;
+  float: left;
   background-color: #8B0000;
   background-image: url(/images/pattern.png);
 }
@@ -59,8 +70,20 @@ body {
   margin: 0px;
 }
 
-.bar-list .bar-container .bar-name h1 span {
+.bar-list .bar-container .bar-name h1 .amsterdam {
+  color: #FF6347;
+}
+
+.bar-list .bar-container .bar-name h1 .berlin {
   color: #FF6666;
+}
+
+.bar-list .bar-container .bar-name h1 .london {
+  color: #FFD700;
+}
+
+.bar-list .bar-container .bar-name h1 .new-york {
+  color: #FF7F50;
 }
 
 .bar-list .bar-container .large-box {
@@ -68,6 +91,9 @@ body {
   height: 0;
   padding-bottom: 50%;
   float: left;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .bar-list .bar-container .small-box {
@@ -75,24 +101,7 @@ body {
   height: 0;
   padding-bottom: 25%;
   float: left;
-}
-
-.green-door-large {
-  background: url(/images/green-door-large.jpg) no-repeat center center;
   background-size: cover;
-}
-
-.green-door-small-left {
-  background: url(/images/green-door-small-left.jpg) no-repeat center center;
-  background-size: cover;
-}
-
-.green-door-small-middle {
-  background: url(/images/green-door-small-middle.jpg) no-repeat center center;
-  background-size: cover;
-}
-
-.green-door-small-right {
-  background: url(/images/green-door-small-right.jpg) no-repeat center center;
-  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
