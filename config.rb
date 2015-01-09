@@ -10,6 +10,7 @@ activate :directory_indexes
 # Page options, layouts, aliases and proxies
 ###
 
+page '/index.html', :layout => false
 # Per-page layout changes:
 #
 # With no layout
