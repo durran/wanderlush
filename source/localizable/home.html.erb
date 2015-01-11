@@ -1,6 +1,14 @@
 <!-- Load Google Maps API just for this page -->
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHtprhvaEA82h11n8JFJGO3U9ONOc9mS4"></script>
 
+<div class="map-nav">
+  <ul>
+    <li><a id="north-america" href="#">North America</a></li>
+    <li><a id="europe" href="#">Europe</a></li>
+    <li><a id="asia" href="#">Asia</a></li>
+  </ul>
+</div>
+
 <!-- Map is embedded here-->
 <div class="map-container">
   <div id="map">
@@ -136,7 +144,7 @@
       }
     ];
 
-    var map = new google.maps.Map(document.getElementById('map'), options);
+    var map = new google.maps.Map($("#map").get(0), options);
     map.setOptions({ styles: styles });
 
     /**
@@ -278,6 +286,18 @@
     });
     google.maps.event.addListener(vienna, "click", function() {
       window.location.href = "<%= "/#{I18n.locale}/vienna" %>";
+    });
+
+    var northAmerica = $("a#north-america").get(0);
+    var europe = $("a#europe").get(0);
+    var asia = $("a#asia").get(0);
+
+    google.maps.event.addDomListener(northAmerica, "click", function() {
+      map.setCenter(newYork.getPosition());
+    });
+
+    google.maps.event.addDomListener(europe, "click", function() {
+      map.setCenter(berlin.getPosition());
     });
   }
 
