@@ -1,15 +1,15 @@
-en:
-  north_america: "North America"
-  europe: "Europe"
+es:
+  north_america: "América del Norte"
+  europe: "Europa"
   asia: "Asia"
   paths:
-    home: "home"
+    home: "inicio"
     berlin: "berlin"
     amsterdam: "amsterdam"
-    london: "london"
+    london: "londres"
     new-york: "new-york"
     hamburg: "hamburg"
     munich: "munich"
-    vienna: "vienna"
+    vienna: "viena"
     beijing: "beijing"
     budapest: "budapest"

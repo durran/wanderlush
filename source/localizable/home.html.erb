@@ -3,9 +3,9 @@
 
 <div class="map-nav">
   <ul>
-    <li><a id="north-america" href="#">North America</a></li>
-    <li><a id="europe" href="#">Europe</a></li>
-    <li><a id="asia" href="#">Asia</a></li>
+    <li><a id="north-america" href="#"><%= I18n.t(:north_america) %></a></li>
+    <li><a id="europe" href="#"><%= I18n.t(:europe) %></a></li>
+    <li><a id="asia" href="#"><%= I18n.t(:asia) %></a></li>
   </ul>
 </div>
 
@@ -165,7 +165,7 @@
       }
     });
     google.maps.event.addListener(berlin, "click", function() {
-      window.location.href = "<%= "/#{I18n.locale}/berlin" %>";
+        window.location.href = "<%= "/#{I18n.locale}/#{I18n.t('paths.berlin')}" %>";
     });
 
     /**
@@ -185,7 +185,7 @@
       }
     });
     google.maps.event.addListener(london, "click", function() {
-      window.location.href = "<%= "/#{I18n.locale}/london" %>";
+      window.location.href = "<%= "/#{I18n.locale}/#{I18n.t('paths.london')}" %>";
     });
 
     /**
@@ -205,7 +205,7 @@
       }
     });
     google.maps.event.addListener(amsterdam, "click", function() {
-      window.location.href = "<%= "/#{I18n.locale}/amsterdam" %>";
+      window.location.href = "<%= "/#{I18n.locale}/#{I18n.t('paths.amsterdam')}" %>";
     });
 
     /**
@@ -225,7 +225,7 @@
       }
     });
     google.maps.event.addListener(newYork, "click", function() {
-      window.location.href = "<%= "/#{I18n.locale}/new-york" %>";
+      window.location.href = "<%= "/#{I18n.locale}/#{I18n.t('paths.new-york')}" %>";
     });
 
     /**
@@ -245,7 +245,7 @@
       }
     });
     google.maps.event.addListener(hamburg, "click", function() {
-      window.location.href = "<%= "/#{I18n.locale}/hamburg" %>";
+      window.location.href = "<%= "/#{I18n.locale}/#{I18n.t('paths.hamburg')}" %>";
     });
 
     /**
@@ -265,7 +265,7 @@
       }
     });
     google.maps.event.addListener(munich, "click", function() {
-      window.location.href = "<%= "/#{I18n.locale}/munich" %>";
+      window.location.href = "<%= "/#{I18n.locale}/#{I18n.t('paths.munich')}" %>";
     });
 
     /**
@@ -285,9 +285,52 @@
       }
     });
     google.maps.event.addListener(vienna, "click", function() {
-      window.location.href = "<%= "/#{I18n.locale}/vienna" %>";
+      window.location.href = "<%= "/#{I18n.locale}/#{I18n.t('paths.vienna')}" %>";
     });
 
+    /**
+     * Create the marker for Budapest.
+     */
+    var budapest = new google.maps.Marker({
+      position : new google.maps.LatLng(47.4925, 19.0514),
+      map : map,
+      icon: {
+        path: google.maps.SymbolPath.CIRCLE,
+        fillOpacity: 0.6,
+        fillColor: "#FFD700",
+        strokeOpacity: 1.0,
+        strokeColor: "#FFD700",
+        strokeWeight: 1.0,
+        scale: 7
+      }
+    });
+    google.maps.event.addListener(budapest, "click", function() {
+      window.location.href = "<%= "/#{I18n.locale}/#{I18n.t('paths.budapest')}" %>";
+    });
+
+    /**
+     * Create the marker for Beijing.
+     */
+    var beijing = new google.maps.Marker({
+      position : new google.maps.LatLng(39.9139, 116.3917),
+      map : map,
+      icon: {
+        path: google.maps.SymbolPath.CIRCLE,
+        fillOpacity: 0.6,
+        fillColor: "#FFD700",
+        strokeOpacity: 1.0,
+        strokeColor: "#FFD700",
+        strokeWeight: 1.0,
+        scale: 7
+      }
+    });
+    google.maps.event.addListener(beijing, "click", function() {
+      window.location.href = "<%= "/#{I18n.locale}/#{I18n.t('paths.beijing')}" %>";
+    });
+
+    /**
+     * Create the links to specific markers from the sub navigation.
+     */
     var northAmerica = $("a#north-america").get(0);
     var europe = $("a#europe").get(0);
     var asia = $("a#asia").get(0);
@@ -298,6 +341,10 @@
 
     google.maps.event.addDomListener(europe, "click", function() {
       map.setCenter(berlin.getPosition());
+    });
+
+    google.maps.event.addDomListener(asia, "click", function() {
+      map.setCenter(beijing.getPosition());
     });
   }
 

@@ -1,13 +1,15 @@
 de:
-  home: "Startseite"
-  gallery: "Galerie"
-  contact: "Kontakt"
-  germany: "Deutschland"
-  data: "Angaben nach § 5 TMG"
-  content: "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV"
-  liability: "Haftungshinweis"
-  phone: "Telefon"
-  notice:
-    "Trotz sorgfältiger inhaltlicher Kontrolle, übernehmen wir keine Haftung für die
-    Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich
-    deren Betreiber verantwortlich."
+  north_america: "Nordamerika"
+  europe: "Europa"
+  asia: "Asien"
+  paths:
+    home: "startseite"
+    berlin: "berlin"
+    amsterdam: "amsterdam"
+    london: "london"
+    new-york: "new-york"
+    hamburg: "hamburg"
+    munich: "muenchen"
+    vienna: "wien"
+    beijing: "peking"
+    budapest: "budapest"

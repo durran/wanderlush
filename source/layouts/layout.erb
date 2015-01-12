@@ -8,7 +8,12 @@
   </head>
   <body>
     <div class="header">
-      <h3 class="logo"><%= link_to "Wanderlush", "/#{I18n.locale}/home" %></h3>
+      <h3 class="logo"><%= link_to "Wanderlush", "/#{I18n.locale}/#{I18n.t('paths.home')}" %></h3>
+      <ul>
+        <li><a href="/en/home">EN</a></li>
+        <li><a href="/de/startseite">DE</a></li>
+        <li><a href="/es/inicio">ES</a></li>
+      </ul>
     </div>
     <%= yield %>
   </body>
