@@ -147,25 +147,26 @@
     var map = new google.maps.Map($("#map").get(0), options);
     map.setOptions({ styles: styles });
 
+    var markerIcon = {
+      path: google.maps.SymbolPath.CIRCLE,
+      fillOpacity: 0.6,
+      fillColor: "#FFD700",
+      strokeOpacity: 1.0,
+      strokeColor: "#FFD700",
+      strokeWeight: 1.0,
+      scale: 7
+    };
+
     /**
      * Create the marker for Berlin.
      */
     var berlin = new google.maps.Marker({
       position : new google.maps.LatLng(52.5167, 13.3833),
       map : map,
-      // Create icon: /images/berlin.png....
-      icon: {
-        path: google.maps.SymbolPath.CIRCLE,
-        fillOpacity: 0.6,
-        fillColor: "#FFD700",
-        strokeOpacity: 1.0,
-        strokeColor: "#FFD700",
-        strokeWeight: 1.0,
-        scale: 7
-      }
+      icon: markerIcon
     });
     google.maps.event.addListener(berlin, "click", function() {
-        window.location.href = "<%= "/#{I18n.locale}/#{I18n.t('paths.berlin')}" %>";
+        window.location.href = "<%= "/#{I18n.locale}/#{I18n.t("paths.berlin")}" %>";
     });
 
     /**
@@ -174,18 +175,10 @@
     var london = new google.maps.Marker({
       position : new google.maps.LatLng(51.5072, 0.1275),
       map : map,
-      icon: {
-        path: google.maps.SymbolPath.CIRCLE,
-        fillOpacity: 0.6,
-        fillColor: "#FFD700",
-        strokeOpacity: 1.0,
-        strokeColor: "#FFD700",
-        strokeWeight: 1.0,
-        scale: 7
-      }
+      icon: markerIcon
     });
     google.maps.event.addListener(london, "click", function() {
-      window.location.href = "<%= "/#{I18n.locale}/#{I18n.t('paths.london')}" %>";
+      window.location.href = "<%= "/#{I18n.locale}/#{I18n.t("paths.london")}" %>";
     });
 
     /**
@@ -194,18 +187,10 @@
     var amsterdam = new google.maps.Marker({
       position : new google.maps.LatLng(52.3667, 4.9000),
       map : map,
-      icon: {
-        path: google.maps.SymbolPath.CIRCLE,
-        fillOpacity: 0.6,
-        fillColor: "#FFD700",
-        strokeOpacity: 1.0,
-        strokeColor: "#FFD700",
-        strokeWeight: 1.0,
-        scale: 7
-      }
+      icon: markerIcon
     });
     google.maps.event.addListener(amsterdam, "click", function() {
-      window.location.href = "<%= "/#{I18n.locale}/#{I18n.t('paths.amsterdam')}" %>";
+      window.location.href = "<%= "/#{I18n.locale}/#{I18n.t("paths.amsterdam")}" %>";
     });
 
     /**
@@ -214,18 +199,10 @@
     var newYork = new google.maps.Marker({
       position : new google.maps.LatLng(40.7127, -74.0059),
       map : map,
-      icon: {
-        path: google.maps.SymbolPath.CIRCLE,
-        fillOpacity: 0.6,
-        fillColor: "#FFD700",
-        strokeOpacity: 1.0,
-        strokeColor: "#FFD700",
-        strokeWeight: 1.0,
-        scale: 7
-      }
+      icon: markerIcon
     });
     google.maps.event.addListener(newYork, "click", function() {
-      window.location.href = "<%= "/#{I18n.locale}/#{I18n.t('paths.new-york')}" %>";
+      window.location.href = "<%= "/#{I18n.locale}/#{I18n.t("paths.new-york")}" %>";
     });
 
     /**
@@ -234,18 +211,10 @@
     var hamburg = new google.maps.Marker({
       position : new google.maps.LatLng(53.5653, 10.0014),
       map : map,
-      icon: {
-        path: google.maps.SymbolPath.CIRCLE,
-        fillOpacity: 0.6,
-        fillColor: "#FFD700",
-        strokeOpacity: 1.0,
-        strokeColor: "#FFD700",
-        strokeWeight: 1.0,
-        scale: 7
-      }
+      icon: markerIcon
     });
     google.maps.event.addListener(hamburg, "click", function() {
-      window.location.href = "<%= "/#{I18n.locale}/#{I18n.t('paths.hamburg')}" %>";
+      window.location.href = "<%= "/#{I18n.locale}/#{I18n.t("paths.hamburg")}" %>";
     });
 
     /**
@@ -254,18 +223,10 @@
     var munich = new google.maps.Marker({
       position : new google.maps.LatLng(48.1333, 11.5667),
       map : map,
-      icon: {
-        path: google.maps.SymbolPath.CIRCLE,
-        fillOpacity: 0.6,
-        fillColor: "#FFD700",
-        strokeOpacity: 1.0,
-        strokeColor: "#FFD700",
-        strokeWeight: 1.0,
-        scale: 7
-      }
+      icon: markerIcon
     });
     google.maps.event.addListener(munich, "click", function() {
-      window.location.href = "<%= "/#{I18n.locale}/#{I18n.t('paths.munich')}" %>";
+      window.location.href = "<%= "/#{I18n.locale}/#{I18n.t("paths.munich")}" %>";
     });
 
     /**
@@ -274,18 +235,10 @@
     var vienna = new google.maps.Marker({
       position : new google.maps.LatLng(48.2000, 16.3667),
       map : map,
-      icon: {
-        path: google.maps.SymbolPath.CIRCLE,
-        fillOpacity: 0.6,
-        fillColor: "#FFD700",
-        strokeOpacity: 1.0,
-        strokeColor: "#FFD700",
-        strokeWeight: 1.0,
-        scale: 7
-      }
+      icon: markerIcon
     });
     google.maps.event.addListener(vienna, "click", function() {
-      window.location.href = "<%= "/#{I18n.locale}/#{I18n.t('paths.vienna')}" %>";
+      window.location.href = "<%= "/#{I18n.locale}/#{I18n.t("paths.vienna")}" %>";
     });
 
     /**
@@ -294,18 +247,10 @@
     var budapest = new google.maps.Marker({
       position : new google.maps.LatLng(47.4925, 19.0514),
       map : map,
-      icon: {
-        path: google.maps.SymbolPath.CIRCLE,
-        fillOpacity: 0.6,
-        fillColor: "#FFD700",
-        strokeOpacity: 1.0,
-        strokeColor: "#FFD700",
-        strokeWeight: 1.0,
-        scale: 7
-      }
+      icon: markerIcon
     });
     google.maps.event.addListener(budapest, "click", function() {
-      window.location.href = "<%= "/#{I18n.locale}/#{I18n.t('paths.budapest')}" %>";
+      window.location.href = "<%= "/#{I18n.locale}/#{I18n.t("paths.budapest")}" %>";
     });
 
     /**
@@ -314,18 +259,10 @@
     var beijing = new google.maps.Marker({
       position : new google.maps.LatLng(39.9139, 116.3917),
       map : map,
-      icon: {
-        path: google.maps.SymbolPath.CIRCLE,
-        fillOpacity: 0.6,
-        fillColor: "#FFD700",
-        strokeOpacity: 1.0,
-        strokeColor: "#FFD700",
-        strokeWeight: 1.0,
-        scale: 7
-      }
+      icon: markerIcon
     });
     google.maps.event.addListener(beijing, "click", function() {
-      window.location.href = "<%= "/#{I18n.locale}/#{I18n.t('paths.beijing')}" %>";
+      window.location.href = "<%= "/#{I18n.locale}/#{I18n.t("paths.beijing")}" %>";
     });
 
     /**
@@ -348,5 +285,5 @@
     });
   }
 
-  google.maps.event.addDomListener(window, 'load', initialize);
+  google.maps.event.addDomListener(window, "load", initialize);
 </script>
