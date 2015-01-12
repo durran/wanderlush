@@ -2,6 +2,8 @@ en:
   north_america: "North America"
   europe: "Europe"
   asia: "Asia"
+  address: "Address"
+  germany: "Germany"
   paths:
     home: "home"
     berlin: "berlin"

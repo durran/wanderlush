@@ -2,6 +2,8 @@ es:
   north_america: "América del Norte"
   europe: "Europa"
   asia: "Asia"
+  address: "Dirección"
+  germany: "Alemania"
   paths:
     home: "inicio"
     berlin: "berlin"
