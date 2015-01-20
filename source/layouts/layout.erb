@@ -9,6 +9,7 @@
   <body>
     <div class="header">
       <h3 class="logo"><%= link_to "Wanderlush", "/#{I18n.locale}/#{I18n.t('paths.home')}" %></h3>
+      <%= yield_content :section %>
       <ul>
         <li><a href="/en/home">EN</a></li>
         <li><a href="/de/startseite">DE</a></li>

@@ -34,6 +34,20 @@ body {
   float: left;
 }
 
+.header h2 {
+  margin: 0px;
+  padding-top: 20px;
+  padding-left: 10px;
+  float: left;
+}
+
+.header .sep {
+  float: left;
+  padding-left: 10px;
+  margin-top: 21px;
+  color: #FFD700;
+}
+
 .header a {
   text-decoration: none;
   color: #FFFFFF;
@@ -150,7 +164,7 @@ body {
 }
 
 .bar-list .bar-container .bar-name h1 {
-  font-size: 2.5vw;
+  font-size: 4.0vw;
   font-weight: 600;
   padding: 20px;
   margin: 0px;
