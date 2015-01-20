@@ -41,6 +41,10 @@ body {
   float: left;
 }
 
+.header .section {
+  color: #FF9900;
+}
+
 .header .sep {
   float: left;
   padding-left: 10px;
@@ -164,7 +168,7 @@ body {
 }
 
 .bar-list .bar-container .bar-name h1 {
-  font-size: 4.0vw;
+  font-size: 3.5vw;
   font-weight: 600;
   padding: 20px;
   margin: 0px;
