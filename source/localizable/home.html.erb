@@ -163,7 +163,12 @@
     var berlin = new google.maps.Marker({
       position : new google.maps.LatLng(52.5167, 13.3833),
       map : map,
-      icon: markerIcon
+      icon: {
+        url: "/images/berlin.png",
+        size: new google.maps.Size(64, 64),
+        scaledSize: new google.maps.Size(32, 32),
+        anchor: new google.maps.Point(16, 16)
+      }
     });
     google.maps.event.addListener(berlin, "click", function() {
         window.location.href = "<%= "/#{I18n.locale}/#{I18n.t("paths.berlin")}" %>";
@@ -175,7 +180,12 @@
     var london = new google.maps.Marker({
       position : new google.maps.LatLng(51.5072, 0.1275),
       map : map,
-      icon: markerIcon
+      icon: {
+        url: "/images/london.png",
+        size: new google.maps.Size(64, 64),
+        scaledSize: new google.maps.Size(32, 32),
+        anchor: new google.maps.Point(16, 16)
+      }
     });
     google.maps.event.addListener(london, "click", function() {
       window.location.href = "<%= "/#{I18n.locale}/#{I18n.t("paths.london")}" %>";
@@ -187,7 +197,12 @@
     var amsterdam = new google.maps.Marker({
       position : new google.maps.LatLng(52.3667, 4.9000),
       map : map,
-      icon: markerIcon
+      icon: {
+        url: "/images/amsterdam.png",
+        size: new google.maps.Size(64, 64),
+        scaledSize: new google.maps.Size(32, 32),
+        anchor: new google.maps.Point(16, 16)
+      }
     });
     google.maps.event.addListener(amsterdam, "click", function() {
       window.location.href = "<%= "/#{I18n.locale}/#{I18n.t("paths.amsterdam")}" %>";
@@ -199,7 +214,12 @@
     var newYork = new google.maps.Marker({
       position : new google.maps.LatLng(40.7127, -74.0059),
       map : map,
-      icon: markerIcon
+      icon: {
+        url: "/images/new-york.png",
+        size: new google.maps.Size(64, 64),
+        scaledSize: new google.maps.Size(32, 32),
+        anchor: new google.maps.Point(16, 16)
+      }
     });
     google.maps.event.addListener(newYork, "click", function() {
       window.location.href = "<%= "/#{I18n.locale}/#{I18n.t("paths.new-york")}" %>";
@@ -211,7 +231,12 @@
     var hamburg = new google.maps.Marker({
       position : new google.maps.LatLng(53.5653, 10.0014),
       map : map,
-      icon: markerIcon
+      icon: {
+        url: "/images/hamburg.png",
+        size: new google.maps.Size(64, 64),
+        scaledSize: new google.maps.Size(32, 32),
+        anchor: new google.maps.Point(16, 16)
+      }
     });
     google.maps.event.addListener(hamburg, "click", function() {
       window.location.href = "<%= "/#{I18n.locale}/#{I18n.t("paths.hamburg")}" %>";
@@ -223,7 +248,12 @@
     var munich = new google.maps.Marker({
       position : new google.maps.LatLng(48.1333, 11.5667),
       map : map,
-      icon: markerIcon
+      icon: {
+        url: "/images/munich.png",
+        size: new google.maps.Size(64, 64),
+        scaledSize: new google.maps.Size(32, 32),
+        anchor: new google.maps.Point(16, 16)
+      }
     });
     google.maps.event.addListener(munich, "click", function() {
       window.location.href = "<%= "/#{I18n.locale}/#{I18n.t("paths.munich")}" %>";
@@ -235,7 +265,12 @@
     var vienna = new google.maps.Marker({
       position : new google.maps.LatLng(48.2000, 16.3667),
       map : map,
-      icon: markerIcon
+      icon: {
+        url: "/images/vienna.png",
+        size: new google.maps.Size(64, 64),
+        scaledSize: new google.maps.Size(32, 32),
+        anchor: new google.maps.Point(16, 16)
+      }
     });
     google.maps.event.addListener(vienna, "click", function() {
       window.location.href = "<%= "/#{I18n.locale}/#{I18n.t("paths.vienna")}" %>";
