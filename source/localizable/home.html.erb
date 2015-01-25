@@ -282,7 +282,12 @@
     var budapest = new google.maps.Marker({
       position : new google.maps.LatLng(47.4925, 19.0514),
       map : map,
-      icon: markerIcon
+      icon: {
+        url: "/images/budapest.png",
+        size: new google.maps.Size(64, 64),
+        scaledSize: new google.maps.Size(32, 32),
+        anchor: new google.maps.Point(16, 16)
+      }
     });
     google.maps.event.addListener(budapest, "click", function() {
       window.location.href = "<%= "/#{I18n.locale}/#{I18n.t("paths.budapest")}" %>";
@@ -303,6 +308,23 @@
     });
     google.maps.event.addListener(beijing, "click", function() {
       window.location.href = "<%= "/#{I18n.locale}/#{I18n.t("paths.beijing")}" %>";
+    });
+
+    /**
+     * Create the marker for Paris.
+     */
+    var paris = new google.maps.Marker({
+      position : new google.maps.LatLng(48.8567, 2.3508),
+      map : map,
+      icon: {
+        url: "/images/paris.png",
+        size: new google.maps.Size(64, 64),
+        scaledSize: new google.maps.Size(32, 32),
+        anchor: new google.maps.Point(16, 16)
+      }
+    });
+    google.maps.event.addListener(paris, "click", function() {
+      window.location.href = "<%= "/#{I18n.locale}/#{I18n.t("paths.paris")}" %>";
     });
 
     /**

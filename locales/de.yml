@@ -13,6 +13,7 @@ de:
   vienna: "Wien"
   beijing: "Peking"
   budapest: "Budapest"
+  paris: "Paris"
   paths:
     home: "startseite"
     berlin: "berlin"
@@ -24,3 +25,4 @@ de:
     vienna: "wien"
     beijing: "peking"
     budapest: "budapest"
+    paris: "paris"

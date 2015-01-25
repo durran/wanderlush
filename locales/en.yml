@@ -13,6 +13,7 @@ en:
   vienna: "Vienna"
   beijing: "Beijing"
   budapest: "Budapest"
+  paris: "Paris"
   paths:
     home: "home"
     berlin: "berlin"
@@ -24,3 +25,4 @@ en:
     vienna: "vienna"
     beijing: "beijing"
     budapest: "budapest"
+    paris: "Paris"
