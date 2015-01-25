@@ -294,7 +294,12 @@
     var beijing = new google.maps.Marker({
       position : new google.maps.LatLng(39.9139, 116.3917),
       map : map,
-      icon: markerIcon
+      icon: {
+        url: "/images/beijing.png",
+        size: new google.maps.Size(64, 64),
+        scaledSize: new google.maps.Size(32, 32),
+        anchor: new google.maps.Point(16, 16)
+      }
     });
     google.maps.event.addListener(beijing, "click", function() {
       window.location.href = "<%= "/#{I18n.locale}/#{I18n.t("paths.beijing")}" %>";
