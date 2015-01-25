@@ -23,7 +23,7 @@
      * The main options for the map.
      */
     var options = {
-      center: { lat: 52.5167, lng: 13.3833 },
+      center: { lat: 52.3667, lng: 4.9000 },
       zoom: 5,
       disableDefaultUI: true,
       scrollwheel: false
@@ -339,7 +339,7 @@
     });
 
     google.maps.event.addDomListener(europe, "click", function() {
-      map.setCenter(berlin.getPosition());
+      map.setCenter(amsterdam.getPosition());
     });
 
     google.maps.event.addDomListener(asia, "click", function() {
