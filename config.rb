@@ -41,11 +41,18 @@ page '/index.html', :layout => false
 # end
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+
+  def get_path(locale, url)
+    translated_path = url.match(/\/(\S{2})\/(\S*)\//)[2]
+    translations = I18n.config.backend.__send__(:translations)
+    current_locale_paths = translations[I18n.locale][:paths]
+    key = current_locale_paths.detect do |k, v|
+      v == translated_path
+    end
+    "/#{locale}/#{translations[locale.to_sym][:paths][key.first]}"
+  end
+end
 
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
