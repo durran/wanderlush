@@ -28,4 +28,15 @@ en:
     paris: "Paris"
     vienna: "vienna"
   reviews:
-    green_door: ""
+    green_door:
+      recommendation: "Recommended Drink: Prince of Wales"
+      text: "Named after the 1970's pornographic film 'Behind the Green Door', this
+        Schöneberg institution is a must for any serious cocktail lovers looking for an
+        open-minded spot that takes its drinks seriously while maintaining a friendly and relaxed
+        atmophere. Where many cocktail bars employ trained robots that churn out expertly crafted
+        drinks with no emotion, here they take their time and pride themselves just as much on
+        conversations with the guests."
+      notes: "Upon arrival, press the button at the door (do not knock) and wait for someone to let
+        you in. If you are a party of over 4 people reservations are almost always a must. Shorts and
+        talking on mobile phones in the bar are not allowed. For non-smokers who are bothered by
+        smoky bars, this is not a recommended spot."

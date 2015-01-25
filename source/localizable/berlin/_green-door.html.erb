@@ -5,24 +5,22 @@
       <div class="content">
         <table>
           <tr>
-            <td class="berlin label"><%= I18n.t(:address) %></td>
-            <td>
-              Winterfeldtstr. 50<br/>
-              10781 Berlin<br/>
-              <%= I18n.t(:germany) %>
-            </td>
+            <td class="berlin label"><img src="/images/address.png" width="28"/></td>
+            <td><a href="http://bit.ly/1JpWFjF" target="new">Winterfeldtstr. 50, 10781</a></td>
           </tr>
           <tr>
-            <td class="berlin label">Phone</td>
+            <td class="berlin label"><img src="/images/phone.png" width="28"/></td>
             <td>+49 30 215 2515</td>
           </tr>
           <tr>
-            <td class="berlin label">Web</td>
-            <td><a href="http://greendoor.de/">greendoor.de</a></td>
+            <td class="berlin label"><img src="/images/home.png" width="28"/></td>
+            <td><a href="http://greendoor.de/" target="new">greendoor.de</a></td>
           </tr>
         </table>
         <div class="review">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit....
+          <p class="recommendation berlin"><%= I18n.t('reviews.green_door.recommendation') %></p>
+          <p class="text"><%= I18n.t('reviews.green_door.text') %></p>
+          <p class="notes"><%= I18n.t('reviews.green_door.notes') %></p>
         </div>
       </div>
     </div>

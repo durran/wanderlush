@@ -154,10 +154,6 @@ body {
   height: 100%;
 }
 
-.bar-list .bar-container :hover {
-  cursor: pointer;
-}
-
 .bar-list .bar-container .bar-name {
   width: 25%;
   height: 0;
@@ -200,15 +196,24 @@ body {
 
 .bar-list .bar-container .large-box .content-box .content .review {
   font-size: 0.9vw;
+  line-height: 1.45vw;
+}
+
+.bar-list .bar-container .large-box .content-box .content .review .recommendation {
   font-style: italic;
-  line-height: 1.25vw;
+  font-weight: 600;
+}
+
+.bar-list .bar-container .large-box .content-box .content .review .notes {
+  font-style: italic;
+  font-size: 0.8vw;
+  color: #CCCCCC;
 }
 
 .bar-list .bar-container .large-box .content-box .content table {
   padding: 0px;
   margin: 0px;
   border: 0px;
-  padding-bottom: 40px;
   width: 100%;
 }
 
@@ -216,11 +221,12 @@ body {
   font-size: 1.15vw;
   line-height: 1.15vw;
   font-weight: 600;
-  vertical-align: top;
+  vertical-align: middle;
 }
 
 .bar-list .bar-container .large-box .content-box .content table .label {
-  width: 30%;
+  width: 34px;
+  height: 28px;
 }
 
 .bar-list .bar-container .large-box .content-box .content table td a {

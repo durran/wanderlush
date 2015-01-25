@@ -22,19 +22,4 @@ $(document).ready(function() {
    * Lazy load all images in the large and small boxes.
    */
   $(".large-box, .small-box").lazyLoad();
-
-  /*
-   * All bar name boxes show the bar information and review box overlay
-   * when clicked.
-   */
-  $(".bar-container").click(function() {
-    var content = $(this).find(".content-box");
-    var display = $(content).css("visibility");
-    if (display == "hidden") {
-      $(content).css("visibility", "visible");
-    }
-    else {
-      $(content).css("visibility", "hidden");
-    }
-  });
 });
